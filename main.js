@@ -1295,7 +1295,7 @@ function main(){
 function newSyno(){
     startTime = new Date().getTime();
     endTime = new Date().getTime();
-    adapter.log.info('Connecting to Synology ' + adapter.config.host + ':' + adapter.config.port);
+    adapter.log.info('Connecting to Synology ' + adapter.config.host + ':' + adapter.config.port + ' User :'+ adapter.config.login + ' Pass: '+adapter.config.password);
     syno = null;
     try {
         syno = new Syno({
